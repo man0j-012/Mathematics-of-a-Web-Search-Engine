@@ -44,12 +44,14 @@ IDF is computed as:
 with *N* = number of docs.
 
 **BM25.** For query *q* and doc *d*:
+The BM25 algorithm is a core ranking function used in modern search engines. It estimates the relevance of a document d to a search query 
+q based on term frequency, inverse document frequency, and document length normalization.
 \[
 \mathrm{BM25}(q,d) = \sum_{t \in q} \mathrm{idf}(t) \cdot \frac{ tf(t,d) \cdot (k_1+1) }{ tf(t,d) + k_1 \cdot \left(1 - b + b \cdot \frac{|d|}{\mathrm{avgdl}} \right) }
 \]
 Defaults: \(k_1=1.2, b=0.75\).
 
-**PageRank.** Power iteration on the link graph with damping \(\alpha=0.85\). Dangling mass redistributed uniformly.
+**PageRank.** Power iteration on the link graph with damping \(\alpha=0.85\). Dangling mass is redistributed uniformly.
 
 **Fusion.** Final score = `w_bm25 * norm(BM25) + w_pr * norm(PageRank)` with defaults `w_bm25=0.85, w_pr=0.15`.
 
