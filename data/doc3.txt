@@ -1,0 +1,5 @@
+TITLE: Distributed Systems for Web Crawling
+LINK: doc1.txt
+A web crawler can be distributed using frontier queues and politeness constraints.
+Fetched pages are parsed, tokenized, and stored.
+The link graph enables algorithms like PageRank to capture authority.

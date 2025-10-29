@@ -1,0 +1,5 @@
+TITLE: Mathematics of Search: PageRank Basics
+LINK: doc2.txt
+PageRank models the probability of a random surfer landing on a page.
+It forms a Markov chain over the link graph and converges via power iteration.
+The damping factor controls teleportation; dangling nodes redistribute mass uniformly.

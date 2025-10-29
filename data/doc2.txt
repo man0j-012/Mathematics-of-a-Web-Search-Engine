@@ -1,0 +1,5 @@
+TITLE: Inverted Index and BM25
+LINK: doc3.txt
+An inverted index maps tokens to postings with positions.
+BM25 balances term frequency against document length normalization and idf.
+Positions allow phrase queries with consecutive offsets.
