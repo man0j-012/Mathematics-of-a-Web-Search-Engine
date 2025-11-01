@@ -1,6 +1,6 @@
 # Web Search Engine
 
-A compact, self-contained C++17 search engine you can build and run locally. It demonstrates the mathematics behind search: tokenization, an inverted index, TF‑IDF/BM25 scoring, PageRank, and a simple rank fusion.
+A  C++17 search engine you can build and run locally. It demonstrates the mathematics behind search: tokenization, an inverted index, TF‑IDF/BM25 scoring, PageRank, and a simple rank fusion.
 
 ## Features
 - **Tokenizer** with lowercasing, ASCII folding, stopword removal, and optional Porter stemming (very light).
